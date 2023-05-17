@@ -8,6 +8,7 @@ height:90vh;
 max-height: fit-content;
 margin:0;
 padding:0;
+background-image:linear-gradient(to bottom, #051139, #50b6ff);
 }
 
 .main-section-grid{
@@ -51,27 +52,29 @@ padding:0;
 .content-container >h1{
     text-transform: uppercase;
     font-size: clamp(1.5rem,5vw,4rem);
-    color:black
+    color:#24d7d1;
+    text-decoration-style: wavy;
 }
 .content-container >h2{
     
     font-size: clamp(1.2rem,2vw,4rem);
-    color:black;
+    color:#ffffff;
 }
 .content-container >h3{
-    color:black;
+    color:#ffffff;
     font-size: clamp(0.7rem,0.8vw,4rem);
     font-weight: 500;
 }
 
-
 .start-button{
     outline: 0;
     border:0;
-    background-color: black;
+    border-radius: 5px;
+    background-color: #09bbb5;
     color: white;
     height:40px;
     width:120px;
+    margin-top: 2rem;
     transition: 400ms;
 }
 
@@ -81,3 +84,17 @@ padding:0;
     background-color: white;
     color:black;
 }
+
+.bank-image-container {
+    animation: slide 4s infinite linear;
+    animation-direction: alternate;
+  }
+  
+  @keyframes slide {
+    from {
+      transform: translateX(-30%);
+    }
+    to {
+      transform: translateX(20%);
+    }
+  }

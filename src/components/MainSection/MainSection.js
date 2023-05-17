@@ -34,11 +34,11 @@ const MainSection = () => {
       <div className="main-section-grid">
         <div className="hero-panel">
           <div className="content-container">
-            <h1>CryptoBank</h1>
+            <h1>SmartBanking</h1>
             <h2>The most secure banking platform</h2>
             <h3>
-              Now don't worry about money wandering off away from your account
-              as this application is secured using blockchain.
+              Be rest assured that your funds are secure and won't be susceptible to unauthorized 
+              access or loss as this application is secured using blockchain.
             </h3>
             <button
               className="start-button"

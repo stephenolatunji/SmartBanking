@@ -116,7 +116,7 @@ const LoanTransaction = () => {
   return !loading ? (
     <div className="loan-section">
       <div className="loan-text-wrapper">
-        <h1>Now easily get loans at a fixed Simple Interest Rate of 0%</h1>
+        <h1>You can easily get loans at a fixed Simple Interest Rate of 0%</h1>
         <h2>
           The loan amount should not be greater than 10% of the bank's balance
           ,once your loan is approved you will get a prompt every minute to
@@ -144,7 +144,7 @@ const LoanTransaction = () => {
             GET LOAN
           </button>
         </form>
-        <h1>{accountBalance} ETH</h1>
+        <p class="Acc-Balance">Account Balance: {accountBalance} ETH</p>
       </div>
 
       <div className="loan-image-wrapper">

@@ -54,7 +54,7 @@ const TransferMoney = () => {
       <div className="transfer-section-wrapper">
         <h1>Welcome to the transfers section</h1>
         <h2>
-          Now easily transfer virtual currency from one account to the other{" "}
+          You can easily transfer virtual currency from one account to the other{" "}
         </h2>
         <form onSubmit={handleTransaction} className="transaction-form">
           <input

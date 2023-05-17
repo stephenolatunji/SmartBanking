@@ -23,26 +23,13 @@ const useBasicDetails = () => {
         const web3 = await getWeb3();
         // Use web3 to get the user's accounts.
         const accounts = await web3.eth.getAccounts();
-        // Get the contract instance.
-        // const networkId = await web3.eth.net.getId();
-        //const deployedNetwork = await BankingContract.networks['5777'];
-        //console.log(deployedNetwork.address);
-        //setContractAddress(deployedNetwork.address)
-        // const instance = new web3.eth.Contract(
-        //   BankingContract.abi,
-        //   deployedNetwork && deployedNetwork.address
-        // );
-        // Create a contract instance
-         // Replace with your deployed contract address
         const contract = new web3.eth.Contract(contractAbi, contractAddress);
         setWeb3(web3);
         setAccount(accounts[0]);
         setContract(contract);
       } catch (error) {
         // Catch any errors for any of the above operations.
-        alert(
-          `Failed to load web3, accounts, or contract. Check console for details.`
-        );
+      
         console.error(error);
       }
     };

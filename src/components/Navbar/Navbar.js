@@ -11,7 +11,7 @@ const Navbar = () => {
           window.location.href = "/";
         }}
       >
-        <h1>CryptoBank</h1>
+        <h1>SMARTBANKING</h1>
       </div>
       <div className="navlistcontainer">
         <ul className="navlist">

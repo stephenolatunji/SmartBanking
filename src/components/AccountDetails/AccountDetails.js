@@ -1,7 +1,11 @@
 import React, { useState, useEffect} from "react";
 import { useParams } from "react-router-dom";
 
-import * as Loader from "react-loader-spinner";
+//import * as Loader from "react-loader-spinner";
+//import Loader from "react-loader-spinner";
+import { TailSpin } from "react-loader-spinner";
+
+
 import "./AccountDetails.css";
 import useBasicDetails from "../../hooks/useBasicDetails";
 
@@ -173,8 +177,7 @@ const AccountDetails = () => {
   if (!web3) {
     return (
       <div className="default">
-        <Loader
-          type="TailSpin"
+        <TailSpin
           color="#00BFFF"
           height={100}
           width={100}
@@ -189,22 +192,61 @@ const AccountDetails = () => {
         <div className="account-card">
           {!loading ? (
             <div className="inner-wrapper">
+              <div className="inner-wrapper1">
               <h1>ACCOUNT-NUMBER : {bankingAccount.serial}</h1>
               <h1>ACCOUNT-NAME : {bankingAccount.name}</h1>
+              </div>
+              <div className="inner-wrapper2">
               <h1>ACCOUNT-BALANCE : {bankingAccountBalance} ETH</h1>
               <h1>ACCOUNT-LOCATION : {bankingAccount.location}</h1>
-              <h1>ACCOUNT-CREATED-AT : {createdDate}</h1>
+              </div>
+             <div className="inner-wrapper3">
+             <h1>ACCOUNT-CREATED-AT : <br></br>{createdDate}</h1>
+             </div>
             </div>
           ) : null}
+          <div className="account-menu">
+            <div className="transfer-balance-card">
+                      <button
+                        className="approve-button"
+                        onClick={() => {
+                          window.location = `/transfer/${id}`;
+                        }}
+                      >
+                        TRANSFER BALANCE TO OTHER ACCOUNTS
+                      </button>
+                    </div>
+            <div className="loan-transaction-card">
+                      <button
+                      className="approve-button"
+                      onClick={() => {
+                        window.location = `/loans/${id}`;
+                      }}
+                    >
+                      GET EASY LOANS
+                    </button>
+            </div>
+          
+          <div className="transaction-history">
+                  <button className="approve-transbutton"
+                  
+                  onClick={()=>{
+                    window.location.href=`/transactions/${id}`
+                  }}
+                  >
+                  TRANSACTION HISTORY 
+                  </button>
+          </div>
+        </div>
         </div>
 
         <div className="add-balance-card">
-          <h1>Add more balance to your account</h1>
+          <p>Add to your account balance</p>
           <form onSubmit={addBalance} className="transact-form">
             <input
               type="number"
               className="form-input-account"
-              placeholder="Add amount"
+              placeholder="Enter amount"
               value={balanceAdded}
               onChange={(e) => {
                 setBalanceAdded(e.target.value);
@@ -234,50 +276,6 @@ const AccountDetails = () => {
           </form>
         </div>
 
-        <div className="transfer-balance-card">
-          <h1>
-            Now you can easily transfer your virtual balance from your account
-            to other account
-          </h1>
-          <button
-            className="approve-button"
-            onClick={() => {
-              window.location = `/transfer/${id}`;
-            }}
-          >
-            TRANSFER BALANCE TO OTHER ACCOUNTS
-          </button>
-        </div>
-
-        <div className="loan-transaction-card">
-          <h1>
-            You can also easily take loans which can be paid on monthly
-            installments with constant interest rates.
-          </h1>
-
-          <button
-            className="approve-button"
-            onClick={() => {
-              window.location = `/loans/${id}`;
-            }}
-          >
-            GET EASY LOANS
-          </button>
-        </div>
-
-        <div className="transaction-history">
-          <h1>
-            You can view your complete transaction history for this account here 
-          </h1>
-          <button className="approve-button"
-           
-           onClick={()=>{
-             window.location.href=`/transactions/${id}`
-           }}
-          >
-          TRANSACTION HISTORY 
-          </button>
-        </div>
       </div>
     </div>
   );
