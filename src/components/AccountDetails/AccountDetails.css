@@ -55,7 +55,7 @@
     margin:100px 60px;
     padding-top: 1rem;
     border-radius:10px;
-    background-color: black;
+    background-color: rgb(111, 159, 237);
     color:white;
     grid-area:card;
 }
@@ -137,6 +137,39 @@
     border:none;
 }
 
+.approveadd-button{
+    margin-left:10px;
+    background-color:#09bbb5;
+    height:40px;
+    width:220px;
+    color:white;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+}
+
+.appprove-button{
+    margin-left:10px;
+    background-color:#09bbb5;
+    height:40px;
+    width:220px;
+    color:white;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+}
+
+.approvewithdrawal-button{
+    margin-left:10px;
+    background-color:#09bbb5;
+    height:40px;
+    width:220px;
+    color:white;
+    border-radius: 10px;
+    outline: none;
+    border:none;
+}
+
 .approve-transbutton{
     margin-left:4rem;
     background-color:#09bbb5;
@@ -171,6 +204,82 @@
     justify-content: center;
 }
 
+@media screen and (max-width: 767px) {
+    .account-details-grid-wrapper {
+      display: block;
+    }
+  
+    .account-card {
+      width: 70%;
+      margin: 30px auto;
+    }
+  
+    .add-balance-card{
+      /* margin: 15px; */
+      margin-top: 15rem;
+      margin-left: 4rem;
+    }
 
+    .withdraw-balance-card {
+        /* margin: 15px; */
+        margin-top: 6rem;
+        margin-left: 4rem;
+      }
+  
+    .approve-button {
+      margin-left: -1.5rem;
+      margin-top: 2rem;
+      width: 120%;
+      font-size: smaller;
+    }
+
+    .approveadd-button {
+        margin-left: 0rem;
+        margin-top: 2rem;
+        width: 116%;
+        font-size: smaller;
+      }
+  
+
+    .approve-transbutton{
+        margin-left: -1.5rem;
+        margin-top: 0rem;
+        width: 120%;
+        font-size: smaller;
+      }
+
+      .appprove-button{
+        margin-left: -1.5rem;
+        margin-top: 0rem;
+        width: 120%;
+        font-size: smaller;
+      }
+  
+    .approvewithdrawal-button{
+        margin-left: -0.5rem;
+        margin-top: 1.5rem;
+        margin-bottom: 2rem;
+        width: 90%;
+        font-size: smaller;
+      }
+    .inner-wrapper,
+    .inner-wrapper1,
+    .inner-wrapper2,
+    .inner-wrapper3 {
+      margin: 10px;
+      font-size: smaller;
+    }
+  
+    .inner-wrapper {
+      display: initial;
+    }
+
+    .account-menu {
+        display: initial;
+        margin-top: 10rem;
+      }
+  }
+  
+  
 
 

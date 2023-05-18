@@ -218,7 +218,7 @@ const AccountDetails = () => {
                     </div>
             <div className="loan-transaction-card">
                       <button
-                      className="approve-button"
+                      className="appprove-button"
                       onClick={() => {
                         window.location = `/loans/${id}`;
                       }}
@@ -252,7 +252,7 @@ const AccountDetails = () => {
                 setBalanceAdded(e.target.value);
               }}
             />
-            <button className="approve-button" type="submit">
+            <button className="approveadd-button" type="submit">
               ADD
             </button>
           </form>
@@ -270,7 +270,7 @@ const AccountDetails = () => {
                 setBalanceWithdrawn(e.target.value);
               }}
             />
-            <button className="approve-button" type="submit">
+            <button className="approvewithdrawal-button" type="submit">
               WITHDRAW
             </button>
           </form>

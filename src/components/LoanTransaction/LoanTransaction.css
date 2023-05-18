@@ -74,3 +74,40 @@
     color: #b506f5;
     font-weight: bold;
   }
+
+  @media screen and (max-width: 768px) {
+    .loan-section {
+      flex-direction: column;
+    }
+    
+    .loan-text-wrapper {
+      width: 100%;
+      margin: 30px;
+    }
+    
+    .loan-image-wrapper {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .loan-text-wrapper > h1 {
+      font-size: clamp(1rem, 1.5rem, 2.0rem);
+      margin-right: 2rem;
+    }
+    
+    .loan-text-wrapper > h2 {
+      font-size: clamp(0.8rem, 1rem, 2rem);
+      margin-right: 2.5rem;
+    }
+    
+    .loan-form-input {
+      width: 80%;
+      max-width: 400px;
+      font-size: 0.85rem;
+    }
+    
+  }
+  

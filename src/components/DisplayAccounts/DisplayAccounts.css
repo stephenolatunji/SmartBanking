@@ -22,6 +22,17 @@ justify-content: center;
     font-size:clamp(1.2rem,3.2rem,6rem);
     margin:40px 50px 10px 50px;
 }
+
+@media only screen and (max-width: 767px) {
+    .accounts > h1 {
+      font-size: clamp(1rem, 2rem, 4rem);
+      margin-left: 1.5rem;
+    }
+    .accounts-display-image {
+        display: none;
+      }
+  }
+
 .account-bars-container{
     height:80%;
     width:90%;

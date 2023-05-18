@@ -19,10 +19,25 @@
 }
 
 .navlogocontainer > h1 {
-  color:#077fef;
+  color: #077fef;
   font-size: clamp(1rem, 1.5vw, 1.5rem);
-  cursor:pointer;
+  cursor: pointer;
   margin-left: 4rem;
+}
+
+.hamburger-menu {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 2rem;
+}
+
+.hamburger-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: 0.3s;
 }
 
 .navlistcontainer {
@@ -30,14 +45,6 @@
   margin-right: 4rem;
   display: flex;
   font-family: "Source Sans Pro", sans-serif;
-}
-.navlist > a {
-  text-decoration: none;
-  color: white;
-}
-.navlist > a:active {
-  text-decoration: none;
-  color: white;
 }
 
 .navlist {
@@ -47,23 +54,17 @@
   width: max-content;
 }
 
-.navlistelements {
-  margin: 20px 5px;
-  padding: 10px 15px;
-  font-size: clamp(1rem, 0.9vw, 1.5rem);
-  font-weight: 800;
-}
-.navlistelements:hover {
-  transition: 400ms;
-  background-color: white;
-  color: black;
+.navlist > li {
+  margin-right: 10px;
 }
 
+.navlist > li > a {
+  text-decoration: none;
+  color: white;
+}
 
-@media screen and (max-width:511px){
-.navlistcontainer{
+@media screen and (max-width: 511px) {
+  .navlistcontainer {
     display: none;
-}
-
-
+  }
 }
