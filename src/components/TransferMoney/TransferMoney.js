@@ -47,7 +47,7 @@ const TransferMoney = () => {
 
 
   if (!web3) {
-    return <div>Loading Web3, accounts, and contract...</div>;
+    return <div>Metamask not detected</div>;
   }
   return (
     <div className="transaction-section">

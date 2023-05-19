@@ -103,6 +103,7 @@ background-image:linear-gradient(to bottom, #051139, #50b6ff);
     .bank-image{
         width:100%;
         height:40%;
+        margin-top: -20rem;
       
     }
   }
