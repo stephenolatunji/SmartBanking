@@ -51,7 +51,7 @@ const MainSection = () => {
           </div>
         </div>
         <div className="bank-image-container">
-          <img alt="" src="./assets/firnal.png" className="bank-image" />
+          <img alt="" src="./assets/Defi.png" className="bank-image" />
         </div>
       </div>
     </div>
